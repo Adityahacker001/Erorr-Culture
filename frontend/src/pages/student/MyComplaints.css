@@ -1,0 +1,505 @@
+/* ================================
+   MY COMPLAINTS PAGE
+================================ */
+
+.my-complaints-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172554;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+
+/* ================================
+   SIDEBAR
+================================ */
+
+.my-complaints-sidebar {
+  width: 245px;
+  min-height: 100vh;
+  background: #172554;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-sidebar-logo {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.my-logo-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #3157d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.my-sidebar-logo h2 {
+  margin: 0;
+  font-size: 17px;
+  color: white;
+}
+
+.my-sidebar-logo span {
+  display: block;
+  margin-top: 3px;
+  font-size: 9px;
+  color: #aebbdc;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.my-sidebar-nav {
+  padding: 28px 15px;
+  flex: 1;
+}
+
+.my-sidebar-nav > p {
+  margin: 0 10px 12px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #7f91bc;
+  font-weight: 700;
+}
+
+.my-account-title {
+  margin-top: 30px !important;
+}
+
+.my-sidebar-link {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  margin-bottom: 5px;
+  color: #b8c4df;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.my-sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+}
+
+.my-sidebar-link.active {
+  background: #3157d5;
+  color: white;
+}
+
+.my-notification-count {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+
+
+/* ================================
+   SIDEBAR BOTTOM
+================================ */
+
+.my-sidebar-bottom {
+  padding: 18px 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.my-student-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.my-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #dbe4ff;
+  color: #3157d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.my-student-profile strong {
+  display: block;
+  font-size: 12px;
+  color: white;
+}
+
+.my-student-profile span {
+  display: block;
+  font-size: 9px;
+  color: #8495bd;
+  margin-top: 2px;
+}
+
+.my-logout {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: #9caac8;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.my-logout:hover {
+  color: white;
+}
+
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+.my-complaints-main {
+  margin-left: 245px;
+  width: calc(100% - 245px);
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.my-complaints-header {
+  min-height: 145px;
+  background: white;
+  border-bottom: 1px solid #e7ebf1;
+  padding: 28px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.my-complaints-header > div > span {
+  color: #8491a5;
+  font-size: 9px;
+  letter-spacing: 1.7px;
+  font-weight: 700;
+}
+
+/* FIXED: My Complaints heading */
+.my-complaints-header h1 {
+  margin: 7px 0 5px;
+  font-size: 27px;
+  color: #172554;
+}
+
+.my-complaints-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+.my-create-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #3157d5;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.my-create-button:hover {
+  background: #2446bd;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.my-complaints-content {
+  padding: 35px 40px 50px;
+}
+
+
+/* ================================
+   SUMMARY
+================================ */
+
+.my-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.my-summary > div {
+  background: white;
+  border: 1px solid #e7ebf1;
+  border-radius: 13px;
+  padding: 20px;
+}
+
+.my-summary span {
+  display: block;
+  color: #7d8999;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+
+.my-summary strong {
+  font-size: 23px;
+  color: #172554;
+}
+
+
+/* ================================
+   COMPLAINT CARD
+================================ */
+
+.my-complaints-card {
+  background: white;
+  border: 1px solid #e7ebf1;
+  border-radius: 14px;
+  padding: 23px;
+}
+
+.my-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.my-card-header span {
+  color: #8491a5;
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+/* FIXED: All Complaints heading */
+.my-card-header h2 {
+  margin: 5px 0 0;
+  font-size: 18px;
+  color: #172554;
+}
+
+
+/* ================================
+   COMPLAINT LIST
+================================ */
+
+.my-complaints-list {
+  border-top: 1px solid #edf0f4;
+}
+
+.my-complaint-item {
+  min-height: 85px;
+  border-bottom: 1px solid #edf0f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+.my-complaint-item:last-child {
+  border-bottom: none;
+}
+
+.my-complaint-item:hover {
+  background: #fafbff;
+}
+
+.my-complaint-left {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.my-complaint-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #eef2ff;
+  color: #3157d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.my-complaint-left h3 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #27344d;
+}
+
+.my-complaint-left p {
+  margin: 0 0 4px;
+  color: #8b96a6;
+  font-size: 9px;
+}
+
+.my-complaint-left small {
+  color: #a0a9b6;
+  font-size: 8px;
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.my-complaint-right {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.my-priority,
+.my-status {
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.my-priority-high {
+  background: #fee8e8;
+  color: #dc3f3f;
+}
+
+.my-priority-medium {
+  background: #fff2dc;
+  color: #d58217;
+}
+
+.my-priority-low {
+  background: #e7f7ed;
+  color: #2c9b5c;
+}
+
+.my-status-resolved {
+  background: #e4f8ed;
+  color: #219456;
+}
+
+.my-status-progress {
+  background: #eee9ff;
+  color: #7254c8;
+}
+
+.my-status-assigned {
+  background: #e7efff;
+  color: #3157d5;
+}
+
+.my-status-pending {
+  background: #fff2dc;
+  color: #d58217;
+}
+
+.my-complaint-right > svg {
+  color: #9aa4b2;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+  .my-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .my-complaints-sidebar {
+    display: none;
+  }
+
+  .my-complaints-main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .my-complaints-header {
+    padding: 25px 20px;
+  }
+
+  .my-complaints-content {
+    padding: 28px 20px 40px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .my-complaints-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .my-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .my-complaint-item {
+    align-items: flex-start;
+    padding: 16px 0;
+  }
+
+  .my-complaint-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+}
